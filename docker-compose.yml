@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  frp-client:
+    image: snowdreamtech/frpc
+    container_name: frp-client
+    volumes:
+      - ./frpc.ini:/frpc.ini
+    command: -c /frpc.ini
